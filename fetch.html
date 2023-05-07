@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <article></article>
+     <input type="button" value="fetch" onclick="
+           /* fetch('html').then(function(response){
+                response.text().then(function(text){
+                    document.querySelector('article').innerHTML = text;
+                })
+            }) 
+            */
+           
+
+
+
+        //     function callbackme(){
+        //     console.log('hi');
+        //    }
+
+                    // ↑↑ 이것은 밑과 동일하다
+
+        //    callbackme = function(){
+        //     console.log('hi');
+        //    }
+                    
+                    // 따라서 이 밑에 있는 문장을
+
+        //    fetch('html').then(callbackme);
+                    
+                    // 밑과 같이 바꿀 수 있다.
+
+            
+        // fetch('html').then(function(response){
+        //     console.log('hi');
+        //    });
+                    // 여기서 hi 대신에 response 를 넣고 console.log에 보면 status가 200을 띄우고 에러가나면 404를 띄운다
+
+                    // 따라서 이런식으로 바꿀 수 있다.
+           fetch('html').then(function(response){
+            console.log(response.status);
+            if(response.status=='404'){
+                alert('Not found')
+            }
+           });
+        "> 
+</body>
+</html>
